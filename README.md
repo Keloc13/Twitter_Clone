@@ -8,7 +8,7 @@ Time spent: 7 hours spent in total
 
 The following **required** functionality is completed:
 
-- [ X] User sees app icon in home screen and styled launch screen. (1pt)
+- [X] User sees app icon in home screen and styled launch screen. (1pt)
 - [X] User can sign in using OAuth login flow. (1pt)
 - [X] User can Logout. (1pt)
 - [X] Create Data Models for User and Tweet. (1pt)
