@@ -1,21 +1,21 @@
 # Project 5 - Twitter
 
-**Name of your app** is a basic twitter app to read and compose tweets the [Twitter API](https://apps.twitter.com/).
+Twitter is a basic twitter app to read and compose tweets the [Twitter API](https://apps.twitter.com/).
 
-Time spent: **X** hours spent in total
+Time spent: 7 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen and styled launch screen. (1pt)
-- [ ] User can sign in using OAuth login flow. (1pt)
-- [ ] User can Logout. (1pt)
-- [ ] Create Data Models for User and Tweet. (1pt)
-- [ ] User can view last 20 tweets from their home timeline with the user profile picture, username, tweet text, and timestamp. (2pts)
-- [ ] User can pull to refresh. (1pt)
-- [ ] User can tap the retweet and favorite buttons in a tweet cell to retweet and/or favorite a tweet. (2pts)
-- [ ] Using AutoLayout, the Tweet cell should adjust it's layout for iPhone 7, Plus and SE device sizes as well as accommodate device rotation. (1pt)
+- [ X] User sees app icon in home screen and styled launch screen. (1pt)
+- [X] User can sign in using OAuth login flow. (1pt)
+- [X] User can Logout. (1pt)
+- [X] Create Data Models for User and Tweet. (1pt)
+- [X] User can view last 20 tweets from their home timeline with the user profile picture, username, tweet text, and timestamp. (2pts)
+- [X] User can pull to refresh. (1pt)
+- [] User can tap the retweet and favorite buttons in a tweet cell to retweet and/or favorite a tweet. (2pts)
+- [X] Using AutoLayout, the Tweet cell should adjust it's layout for iPhone 7, Plus and SE device sizes as well as accommodate device rotation. (1pt)
 
 The following **stretch** features are implemented:
 
@@ -46,6 +46,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+Trying to understand more about networking into Twitter's API.
+
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
@@ -54,7 +56,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2018 Kevin Vu Nguyen
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
