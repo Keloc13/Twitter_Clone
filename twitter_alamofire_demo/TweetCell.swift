@@ -70,9 +70,8 @@ class TweetCell: UITableViewCell {
                 if let  error = error {
                     print("Error unfavoriting tweet: \(error.localizedDescription)")
                 } else if let tweet = tweet {
-                    print("Successfully favorited the following Tweet: \n\(tweet.text)")
+                    print("Successfully unfavorited the following Tweet: \n\(tweet.text)")
                 }
-                
             }
         }
     }
@@ -84,10 +83,24 @@ class TweetCell: UITableViewCell {
         if !tweet.retweeted {
             tweet.retweetCount += 1
             retweetSymbol.setImage(#imageLiteral(resourceName: "retweet-icon-green.png"), for: .normal)
+            APIManager.shared.retweet(tweet){(tweet: Tweet?, error: Error?) in
+                if let error = error{
+                    print("Error retweeting tweet: \(error.localizedDescription)")
+                } else {
+                    print("Successfully retweeted tweet:\n \(tweet?.text ?? "Value not found.")")
+                }
+            }
         }
         else {
             tweet.retweetCount -= 1
             retweetSymbol.setImage(#imageLiteral(resourceName: "retweet-icon.png"), for: .normal)
+            APIManager.shared.untweet(tweet){(tweet: Tweet?, error: Error?) in
+                if let error = error{
+                    print("Error untweeting tweet: \(error.localizedDescription)")
+                } else {
+                    print("Successfully untweeted tweet:\n \(tweet?.text ?? "Value not found.")")
+                }
+            }
         }
         tweet.retweeted = !tweet.retweeted
         refreshData()
